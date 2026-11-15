@@ -43,6 +43,56 @@
             gap: 30px;
         }
 
+        
+        /* SMALL PROJECT CARDS */
+        
+        .small-projects {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-top: 25px;
+        }
+        
+        .small-project {
+            background: #16352B;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid transparent;
+            transition: 0.3s;
+        }
+        
+        .small-project:hover {
+            transform: translateY(-5px);
+            border-color: #D4AF37;
+        }
+        
+        .small-project h3 {
+            color: #D4AF37;
+            font-size: 17px;
+            margin-bottom: 10px;
+        }
+        
+        .small-project p {
+            color: #A7F3D0;
+            font-size: 13px;
+            margin-bottom: 12px;
+        }
+        
+        .small-project a {
+            color: #34D399;
+            font-size: 13px;
+            font-weight: bold;
+        }
+        
+        /* MOBILE */
+        
+        @media (max-width: 800px) {
+            .small-projects {
+                grid-template-columns: 1fr;
+            }
+        }
+
+
         /* SIDEBAR */
 
         header {
@@ -386,6 +436,44 @@
                 </a>
 
             </div>
+
+            
+            <!-- SMALLER PROJECT CARDS -->
+            
+            <div class="small-projects">
+            
+                <div class="small-project">
+            
+                    <h3>Project Three</h3>
+            
+                    <p>
+                        Brief description of your third project
+                        and the skills you developed.
+                    </p>
+            
+                    <a href="#">
+                        View Project →
+                    </a>
+            
+                </div>
+            
+                <div class="small-project">
+            
+                    <h3>Project Four</h3>
+            
+                    <p>
+                        Brief description of your fourth project
+                        and what you learned.
+                    </p>
+            
+                    <a href="#">
+                        View Project →
+                    </a>
+            
+                </div>
+            
+            </div>
+
 
         </section>
 
