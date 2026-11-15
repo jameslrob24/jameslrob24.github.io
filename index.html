@@ -4,9 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>James Robinson | Portfolio</title>
 
     <style>
+
+        /* GLOBAL SETTINGS */
+
         * {
             margin: 0;
             padding: 0;
@@ -20,14 +24,14 @@
 
         body {
             font-family: Arial, sans-serif;
-            background: #0a192f;
-            color: #64ffda;
+            background: #172033;
+            color: #FDE2C5;
             line-height: 1.7;
         }
 
         a {
             text-decoration: none;
-            color: ##ff8c00;
+            color: #FFC857;
         }
 
         .container {
@@ -52,21 +56,23 @@
 
         header h1 {
             font-size: 42px;
-            color: ##ff8c00;
+            color: #FF7849;
             margin-bottom: 5px;
         }
 
         header h2 {
             font-size: 19px;
-            color: ##ff8c00;
+            color: #FFC857;
             margin-bottom: 15px;
         }
 
         header p {
-            color: #64ffda;
+            color: #FDE2C5;
             max-width: 330px;
             margin-bottom: 35px;
         }
+
+        /* NAVIGATION */
 
         nav {
             display: flex;
@@ -75,7 +81,7 @@
         }
 
         nav a {
-            color: #64ffda;
+            color: #FFC857;
             font-size: 13px;
             font-weight: bold;
             letter-spacing: 2px;
@@ -84,9 +90,11 @@
         }
 
         nav a:hover {
-            color: ##ff8c00;
+            color: #FF7849;
             padding-left: 10px;
         }
+
+        /* SOCIAL LINKS */
 
         .social-links {
             margin-top: 40px;
@@ -95,18 +103,19 @@
         }
 
         .social-links a {
-            color: #64ffda;
+            color: #FFC857;
             font-size: 14px;
         }
 
         .social-links a:hover {
-            color: ##ff8c00;
+            color: #FF7849;
         }
 
         /* MAIN CONTENT */
 
         main {
             padding: 100px 0;
+            min-width: 0;
         }
 
         section {
@@ -114,7 +123,7 @@
         }
 
         .section-title {
-            color: ##ff8c00;
+            color: #FF7849;
             font-size: 14px;
             text-transform: uppercase;
             letter-spacing: 3px;
@@ -122,14 +131,14 @@
         }
 
         .description {
-            color: #64ffda;
+            color: #FDE2C5;
             margin-bottom: 18px;
         }
 
         /* PROJECT CARDS */
 
         .project {
-            background: #112240;
+            background: #24334D;
             padding: 28px;
             border-radius: 8px;
             margin-bottom: 22px;
@@ -139,29 +148,32 @@
 
         .project:hover {
             transform: translateY(-5px);
-            border-color: ##ff8c00;
+            border-color: #FF7849;
         }
 
         .project h3 {
-            color: ##ff8c00;
+            color: #FF7849;
             font-size: 20px;
             margin-bottom: 12px;
         }
 
         .project p {
-            color: #64ffda;
+            color: #FDE2C5;
             margin-bottom: 15px;
         }
 
         .project-link {
             font-size: 14px;
             font-weight: bold;
-            color: ##ff8c00;
+            color: #FFC857;
         }
 
         .project-link:hover {
+            color: #FF7849;
             text-decoration: underline;
         }
+
+        /* PROJECT TAGS */
 
         .tags {
             display: flex;
@@ -171,36 +183,40 @@
         }
 
         .tags span {
-            background: #0a192f;
-            color: #64ffda;
+            background: #172033;
+            color: #FFC857;
             padding: 5px 12px;
             border-radius: 20px;
             font-size: 12px;
         }
 
-        /* CONTACT */
+        /* CONTACT SECTION */
 
         .contact-box {
-            background: #112240;
+            background: #24334D;
             padding: 30px;
             border-radius: 8px;
+            border-left: 3px solid #FF7849;
         }
 
         .contact-box p {
-            color: #64ffda;
+            color: #FDE2C5;
             margin-bottom: 15px;
         }
 
         .contact-box a {
-            color: ##ff8c00;
+            color: #FFC857;
         }
 
         .contact-box a:hover {
+            color: #FF7849;
             text-decoration: underline;
         }
 
+        /* FOOTER */
+
         footer {
-            color: #64ffda;
+            color: #FDE2C5;
             font-size: 12px;
             margin-top: 60px;
         }
@@ -208,6 +224,7 @@
         /* MOBILE RESPONSIVENESS */
 
         @media (max-width: 800px) {
+
             .container {
                 display: block;
                 padding: 0 25px;
@@ -240,6 +257,7 @@
             section {
                 margin-bottom: 75px;
             }
+
         }
 
     </style>
@@ -283,12 +301,11 @@
 
     </header>
 
-
     <!-- MAIN CONTENT -->
 
     <main>
 
-        <!-- ABOUT -->
+        <!-- ABOUT ME -->
 
         <section id="about">
 
@@ -314,7 +331,6 @@
             </p>
 
         </section>
-
 
         <!-- PROJECTS -->
 
@@ -346,7 +362,6 @@
 
             </div>
 
-
             <div class="project">
 
                 <h3>Project Two</h3>
@@ -372,7 +387,6 @@
             </div>
 
         </section>
-
 
         <!-- CONTACT -->
 
@@ -405,7 +419,6 @@
             </div>
 
         </section>
-
 
         <!-- FOOTER -->
 
